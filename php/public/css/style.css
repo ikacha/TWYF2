@@ -1,0 +1,213 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+    color: #525252;
+	background-color: #EFEFF0;
+	margin-top: 0;
+	text-align: center;
+}
+
+#logo {
+	align-content: center;
+	opacity: 0.5; 
+}
+
+/************************************/
+/**************Home Menu*************/
+/************************************/
+
+#imgmenu{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+}
+
+.padding {
+	opacity: 0.85;
+	padding: 20px 20px;
+
+}
+
+.padding:hover {
+	opacity: 1;
+}
+
+object {
+	display: none;
+}
+
+#snackbar 
+{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show 
+{
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein 
+{
+    from 
+    {
+    	bottom: 0; opacity: 0;
+    }
+    to 
+    {
+    	bottom: 30px; opacity: 1;
+    }
+}
+
+@keyframes fadeout 
+{
+    from 
+    {
+    	bottom: 30px; opacity: 1;
+    }
+    to 
+    {
+    	bottom: 0; opacity: 0;
+    }
+}
+
+/************************************/
+/***********connexionpage************/
+/************et signuppage**********/
+
+.formulaire {
+	margin: 5px 5px;
+	font-family: 'Ubuntu';
+	width: 35%;
+	min-width: 350px;
+}
+
+.formcss {
+	margin: 5px 5px;
+	font-family: 'Ubuntu';
+	width: 35%;
+	min-width: 350px;
+	height: 50px;
+	border-radius: 10px 10px;
+	box-shadow: 3px 3px #EB3535;
+	text-align: center;
+	color: #EB3535;
+}
+
+form {
+	font-size: 20px;
+	text-align: center;
+}
+
+form input {
+	opacity: 0.85;
+	margin-top: 20px;
+	border-style: none;
+}
+
+form input:hover {
+	opacity: 1;
+}
+
+#errorlog {
+	color: #EB3535;
+	display: none;
+}
+
+#sign-btn, .back, #cnx-btn, #deco-btn, #dl-btn
+{
+	background-color: transparent;
+	background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+#sign-btn, .back, #cnx-btn, #dl-btn
+{
+	width: 350px;
+	height: 95px;
+}
+
+#sign-btn
+{
+	background: url(../img/signup.png);
+}
+
+.back
+{
+	background: url(../img/retour.png);
+}
+
+#cnx-btn
+{
+	background: url(../img/connexion.png);
+}
+
+#dl-btn
+{
+	background: url(../img/telecharger.png);
+}
+
+#deco-btn
+{
+	background: url(../img/deconexion.png);
+	width: 90px;
+	height: 90px;
+}
+
+#sign-btn:hover, .back:hover, #cnx-btn:hover, #deco-btn:hover, #dl-btn:hover
+{
+	opacity: 1;
+}
+
+.div_connexion, .conteneur_menu
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div_menu
+{
+	margin: 5px 0px;
+}
+
+/************************************/
+/************Media Queries***********/
+/************************************/
+
+
+@media screen and (max-width: 640px)
+{
+	.formulaire
+	{
+		width: 90%;
+		max-width: 90%;
+	}
+}
+
+/************************************/
+/************telecharger*************/
+/************************************/
+
+
+input#file {
+	display: none;
+}
+
+div#telecharger {
+	width: 20%;
+}
