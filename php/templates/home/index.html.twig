@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TWYF</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+</head>
+<body>
+<div><center><img src="img/logo2.png" id="logo"></center></div>
+
+<div id="errorlog"><center><br>Le pseudo ou le mot de passe est incorrect.<br><br></center></div>
+
+
+<section id="connexionpage">
+    <form id="login">
+        <label class="formulaire">Pseudo :</label><br>
+        <input class="formcss" type="text" name="pseudo"  placeholder="Votre Pseudo"><br>
+        <label class="formulaire">Mot de Passe :</label><br>
+        <input class="formcss" type="password" name="Mot_de_passe" placeholder="Votre Mot de Passe"><br>
+        <input type="image" src="img/connexion.png" alt="Submit" id="cnx-btn"><br>
+        <input type="image" src="img/signup.png" name="sign" alt="Submit" id="sign-btn"><br>
+        <script type="text/javascript" src="app.js"></script>
+    </form>
+
+</section>
+
+<section id="signuppage">
+    <form method="post" enctype="multipart/form-data" id="signup">
+        <label class="formulaire">Pseudo :</label><br>
+        <input class="formcss" type="text" name="pseudo" placeholder="Votre Pseudo"><br>
+        <label class="formulaire">Nom :</label><br>
+        <input class="formcss" type="text" name="nom" placeholder="Votre Nom"><br>
+        <label class="formulaire">Prénom :</label><br>
+        <input class="formcss" type="text" name="prenom" placeholder="Votre Prénom"><br>
+        <label class="formulaire">e-mail :</label><br>
+        <input class="formcss" type="text" name="mail" placeholder="Votre e-m@il"><br>
+        <label class="formulaire">Mot de Passe :</label><br>
+        <input class="formcss" type="password" name="Mot_de_passe" placeholder="Votre Mot de Passe"><br>
+        <input type="image" src="img/creer.png" alt="Submit" id="create-btn"><br>
+    </form>
+</section>
+
+
+<section id="menupage">
+    <div id="imgmenu">
+    <form>
+        <input type="image" src="img/scanner.png" alt="Submit" id="scan-btn"><br>
+        <input type="image" src="img/dicter.png" name="sign" alt="Submit" id="dict-btn"><br>
+        <input type="image" src="img/telecharger.png" name="sign" alt="Submit" id="dl-btn"><br>
+        <input type="image" src="img/deconexion.png" name="sign" alt="Submit" id="deco-btn"><br>
+    </form>
+
+
+
+</section>
+
+
+<section id="scanpage">
+
+
+test
+
+</section>
+
+
+
+<section id="dictpage">
+
+
+    test
+
+</section>
+
+
+
+
+
+<section id="telecharger">
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <p>Sélectionner un fichier image et cliquer ensuite sur Télécharger.</p>
+            <input type="file" id="file" name="file" accept="image/*">
+            <label for="file" class="label">
+                <img src="img/add.png" alt="upload.png">
+            </label>
+
+            <div id="conteneur_fichier"></div>
+
+        </div>
+        <div>
+            <input type="image" src="img/telecharger.png" name="upload" alt="upload" id="submit-btn"><br>
+        </div>
+    </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
